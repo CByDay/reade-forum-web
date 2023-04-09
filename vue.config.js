@@ -36,7 +36,9 @@ module.exports = defineConfig({
       // '/api'可以是任何值，表示以/api开头的请求，实际项目中所以路径以/api开头的请求都会被本地服务器转发
       '/api': {
         // target指想要被代理的后端接口服务器地址(目标路径)(真正请求的服务器地址) 192.168.177.1 本机
-        target: 'http://192.168.177.1:4000',
+        target: 'http://localhost:8089',
+        // 允许跨域
+        changeOrigin: true,
         // pathRewrite用以在发送请求时，重写请求路径
         // 如果在实际的请求路径中你不希望出现/api，那么可以重写路径，在请求路径中去掉/api，如下所示
         pathRewrite: {
