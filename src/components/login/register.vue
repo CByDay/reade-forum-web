@@ -1,0 +1,15 @@
+<template>
+    <div>
+        注册页面
+    </div>
+</template>
+
+<script setup>
+// export default {
+
+// }
+</script>
+
+<style scoped>
+
+</style>
